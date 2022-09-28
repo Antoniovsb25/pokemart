@@ -1,0 +1,12 @@
+.home {
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+}
+
+@media (max-width: 768px) {
+    .home {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+}

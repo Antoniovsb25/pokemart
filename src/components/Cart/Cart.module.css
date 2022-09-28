@@ -1,0 +1,37 @@
+.cart {
+    min-width: 250px;
+    margin-top: 10px;
+}
+.products-container {
+    border-bottom: 1px solid #000;
+    margin-bottom: 8px;
+}
+
+.product-container__image-name-wrapper, .product-container {
+    display: flex;
+}
+
+.product-container__image-name-wrapper {
+    gap: 8px;
+}
+
+.product-container {
+    border: 1px solid #000;
+    border-radius: 8px;
+    padding: 8px;
+    justify-content: space-between;
+}
+
+.buyButton {
+    border: none;
+    background-color: #ff554d;
+    color: #FFF;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 8px 50px;
+}
+
+.buyButton:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}

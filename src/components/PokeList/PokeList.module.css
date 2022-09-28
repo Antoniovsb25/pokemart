@@ -1,0 +1,22 @@
+.pokeList {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+    animation: fadeIn 1s;
+}
+
+@media (min-width: 768px) {
+    .pokeList {
+        grid-template-columns: auto auto auto;
+        grid-gap: 10px;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }

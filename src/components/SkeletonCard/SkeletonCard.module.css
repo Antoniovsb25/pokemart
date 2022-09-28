@@ -1,0 +1,18 @@
+.card-skeleton {
+    display: flex;
+    padding: 0.5rem;
+    border: 1px solid grey;
+    border-radius: 5px;
+    background-color: #FFF;
+    flex-direction: column;
+    max-height: 189px;
+    max-width: 128px;
+    margin: 10px;
+  }
+  .img-col {
+    align-self: center;
+    margin-bottom: 0.25rem;
+  }
+  .info-col {
+    flex: 1;
+  }

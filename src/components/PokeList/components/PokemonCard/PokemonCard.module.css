@@ -1,0 +1,14 @@
+.pokecard {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.buyButton {
+    border: none;
+    background-color: #ff554d;
+    color: #FFF;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 8px;
+}

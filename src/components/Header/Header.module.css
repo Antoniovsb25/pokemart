@@ -1,0 +1,38 @@
+.header {
+    background-color: #002148;
+    border-bottom: 1px solid #000;
+    width: 100%;
+    color: #FFF;
+    z-index: 5;
+}
+
+.scrolled {
+    position: fixed;
+}
+
+.gridContainer {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+}
+
+.logo {
+    flex-grow: 0.2;
+    margin-left: 10px
+}
+
+.search {
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    flex-grow: 0.5;
+}
+
+@media (max-width: 768px) {
+    .gridContainer {
+        flex-direction: column;
+    }
+    .logo {
+        margin-left: 0;
+    }
+}
