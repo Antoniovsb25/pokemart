@@ -3,7 +3,7 @@ desafio da trilha de reactjs da gama academy em parceria com a corebiz
 <hr>
 
 ### Link do deploy na Vercel <br>
-[Link da Loka Pokemart]()
+[Link da Loka Pokemart](https://pokemart-gamaac.vercel.app/)
 <hr>
 
 ### Pontos de melhoria para o projeto <br>
