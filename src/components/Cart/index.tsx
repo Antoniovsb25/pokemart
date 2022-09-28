@@ -17,7 +17,7 @@ const Cart = () => {
   };
   return (
     <>
-      {openModal && <ModalOverlay closeModal={closeModal} />}
+      {openModal && <ModalOverlay closeModal={closeModal} children={undefined} />}
       <Card className={styles.cart}>
         <h2>Carrinho</h2>
         <div className={styles["products-container"]}>

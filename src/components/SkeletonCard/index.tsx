@@ -1,17 +1,15 @@
-import Skeleton from 'react-loading-skeleton'
-import 'react-loading-skeleton/dist/skeleton.css'
+import Skeleton from "react-loading-skeleton";
+import "react-loading-skeleton/dist/skeleton.css";
 
-import styles from "./SkeletonCard.module.css"
+import styles from "./SkeletonCard.module.css";
 
-interface SkeletonProps {
-    cards: number;
-}
+const numberOfSkeletons = new Array(24).fill(0);
 
-const SkeletonCard = ({ cards } : SkeletonProps) => {
-    return Array(cards)
-      .fill(0)
-      .map((_, i) => (
-        <div className={styles["card-skeleton"]} key={i}>
+const SkeletonCard = () => {
+  return (
+    <>
+      {numberOfSkeletons.map((_) => (
+        <div className={styles["card-skeleton"]}>
           <div className={styles["img-col"]}>
             <Skeleton width={90} height={90} />
           </div>
@@ -19,7 +17,9 @@ const SkeletonCard = ({ cards } : SkeletonProps) => {
             <Skeleton count={4} style={{ marginBottom: ".6rem" }} />
           </div>
         </div>
-      ));
-  };
+      ))}
+    </>
+  );
+};
 
 export default SkeletonCard;

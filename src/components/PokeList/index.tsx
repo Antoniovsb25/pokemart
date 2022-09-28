@@ -5,14 +5,13 @@ import PokemonCard from "./components/PokemonCard";
 import axios from "axios";
 
 import styles from "./PokeList.module.css";
-import Skeleton from 'react-loading-skeleton'
 import 'react-loading-skeleton/dist/skeleton.css'
 
 const PokeList = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [pokemons, setPokemons] = useState<any>([]);
 
-  const { inputValue, setInputValue } = useCartContext();
+  const { inputValue } = useCartContext();
 
   const getPokemons = async () => {
     setIsLoading(true)
@@ -47,8 +46,8 @@ const PokeList = () => {
 
   return (
     <section className={styles.pokeList}>
-      {isLoading && <SkeletonCard cards={24} />}
-      {pokemons.map((pokemon: any, index: number) => {
+      {isLoading && <SkeletonCard />}
+      {pokemons.map((pokemon: any) => {
         return (
           <PokemonCard
           id={pokemon.data.id}

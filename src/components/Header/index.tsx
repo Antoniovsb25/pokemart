@@ -18,19 +18,23 @@ const Header = () => {
   };
 
   const filterHandler = () => {
-    setInputValue(searchValue.current.value);
+    if (searchValue !== null && searchValue.current !== null) {
+      setInputValue(searchValue.current.value);
+    }
   };
 
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll, { passive: true });
+    window.addEventListener("scroll", handleScroll, { passive: true });
 
     return () => {
-        window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
-}, []);
+  }, []);
 
   return (
-    <header className={`${styles.header} ${scrollPosition > 0 && styles.scrolled}`}>
+    <header
+      className={`${styles.header} ${scrollPosition > 0 && styles.scrolled}`}
+    >
       <nav className={styles.gridContainer}>
         <h1 className={styles.logo}>PokeMart</h1>
         <input
